@@ -13,7 +13,7 @@ const port = args.port || 5000;
 
 // requirement #3
 app.get('/app/', (req, res) => {
-    res.send('200 OK');
+    res.status(200).send('200 OK');
 });
 
 // requirement #4
@@ -53,7 +53,7 @@ app.get('/app/roll/:sides/:dice/:rolls/', (req, res) =>{
 })
 
 app.use((req, res) => {
-	res.send("404 NOT FOUND");
+	res.status(404).send("404 NOT FOUND");
 });
 
 app.listen(port);
