@@ -8,9 +8,6 @@
     "test": "node server.js --port=5555",
     "start": "node server.js"
   },
-  "directories": {
-    "lib": "lib"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2022-fall/a04-ziqian2.git"
