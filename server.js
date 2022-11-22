@@ -52,7 +52,7 @@ app.get('/app/roll/:sides/:dice/:rolls/', (req, res) =>{
     res.send(roll(sides, dice, rolls));
 })
 
-app.use((req, res) =>  {
+app.use(function(req, res) {
 	res.send("404 NOT FOUND");
 });
 
