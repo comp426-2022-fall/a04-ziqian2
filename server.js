@@ -4,7 +4,7 @@ import { roll } from './lib/roll.js';
 
 const args = minimist(process.argv.slice(2));
 const app = express();
-app.use(express.urlencoded({ extened: true}));
+app.use(express.urlencoded({ extended: true }));
 
 const port = args.port || 5000;
 
