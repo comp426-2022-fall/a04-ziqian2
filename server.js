@@ -13,7 +13,7 @@ const port = args.port || 5000;
 
 // requirement #3
 app.get('/app/', (req, res) => {
-    res.status(200).res.send('200 OK');
+    res.send('200 OK');
 });
 
 // requirement #4
